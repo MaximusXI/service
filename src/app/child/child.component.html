@@ -1,0 +1,12 @@
+<p>child works!</p>
+
+
+
+<input type="text" #childInput class="formGroup">
+<button (click)="sendChildVal(childInput.value)">Set ServiceVarBy Child</button>
+
+<button (click)="getServiceVar()">Show Current ServiceVar Value</button>
+
+<br>
+Service Variable is:{{childVar}}
+<br>

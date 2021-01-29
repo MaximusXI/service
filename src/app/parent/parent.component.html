@@ -1,0 +1,12 @@
+<p>parent works!</p>
+
+<input type="text" #inputBox class="formControl">
+
+<button (click)="parentFunc(inputBox.value)">Set ServiceVarBy Parent</button>
+
+<button (click)="showcurrentServiceVar()">Show Current ServiceVar Value</button>
+
+<br>
+Service Variable is:{{parentVar}}
+
+<app-child></app-child>
